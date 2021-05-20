@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.campusEats.ui.home.HomeFragment"
+        android:label="BoneFood"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.campusEats.ui.login.LoginFragment"
+        android:label="CampusEats"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/nav_signup"
+        android:name="com.example.campusEats.ui.signup.SignUpFragment"
+        android:label="CampusEats"
+        tools:layout="@layout/fragment_signup"/>
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.campusEats.ui.logout.LogoutFragment"
+         />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:label="關於我們"
+        android:name="com.example.campusEats.ui.about.AboutFragment"
+        />
+
+    <fragment
+        android:id="@+id/nav_suggest"
+        android:name="com.example.campusEats.ui.suggest.category_ui.PassFragment"
+        android:label="CampusEats"
+        />
+
+</navigation>
+

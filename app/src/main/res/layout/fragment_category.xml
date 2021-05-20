@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.suggest.record_ui.RecordFragment"
+    android:background="#130f40">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2c2c54"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:background="#2c2c54"
+            android:outlineSpotShadowColor="#2c2c54"
+            android:text="←"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="你想吃什麼啊🤤"
+            android:textColor="#fff"
+            android:textSize="22dp" />
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/scroll_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--    01    -->
+            <LinearLayout
+                android:id="@+id/store_01"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/store_01" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="芙樂廚坊早午餐" />
+
+                    <TextView
+                        android:id="@+id/cart_badge01"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="早午餐"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="8dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="811高雄市楠梓區創新路882號1樓" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--    02    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/store_02"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/store_02" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="大內製麵-土庫店" />
+
+                    <TextView
+                        android:id="@+id/cart_badge02"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="麵食"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="8dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="811高雄市楠梓區土庫路220號" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--    03    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/store_03"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/store_04" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="元之氣早午餐 - 清豐二路" />
+
+                    <TextView
+                        android:id="@+id/cart_badge03"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="早午餐"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="8dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="811高雄市楠梓區清豐二路148號" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--    04   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/store_04"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/store_03" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="第一讚炒飯專賣店" />
+
+                    <TextView
+                        android:id="@+id/cart_badge05"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="炒飯"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="8dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="811高雄市楠梓區土庫二路191號" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--    05    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/store_05"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/store_05" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="大上海火鍋 - 楠梓店" />
+
+                    <TextView
+                        android:id="@+id/cart_badge04"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="火鍋"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="8dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="811高雄市楠梓區旗楠路52號" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--    06    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/store_06"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/store_06" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="炸魂雞排 - 楠梓店" />
+
+                    <TextView
+                        android:id="@+id/cart_badge06"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="炸物"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="8dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="811高雄市楠梓區楠梓路188號" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--    07   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/store_07"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/store_07" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="北平楊寶寶蒸餃" />
+
+                    <TextView
+                        android:id="@+id/cart_badge07"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="餃類"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="8dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="814高雄市楠梓區朝明路106號" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--    08    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/store_08"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/store_08" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="高雄滷味王 - 楠梓店" />
+
+                    <TextView
+                        android:id="@+id/cart_badge08"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/badge_background"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="滷味"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="8dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center_horizontal"
+                        android:text="811高雄市楠梓區創新路68號" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
